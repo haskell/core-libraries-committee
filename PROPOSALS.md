@@ -41,4 +41,8 @@ But alas, I hear you sigh, what if it gets abandoned _again_? Well, here is wher
 
 What does that mean for your project? If it's been **two weeks** since anyone raised concerns *that haven't been addressed*, you as the issue creator should take the initiative and create the pull request for the library you intend to change. If you don't have access (such as on GitLab), ping us individually in a reply to your issue and one of us will get back to you.
 
-#### what happens if no one replies? rare, sure, but not impossible
+## The "who"
+
+In the past the CLC has been criticized for its inefficiency and for having difficulties coordinating its members. We aspire to respond to comments, pull requests, and direct emails no more than 14 days after their arrival. We'd like to make sure that the Haskell community feels they can hold us accountable for this.
+
+To this end, if you believe that we are taking too long to respond, that the CLC is not doing its due diligence in monitoring active issues, or have other concers, we think it's fair that the [GHC Development team](link), the largest contributor to `base`, should have the power to reprimand the CLC when necessary.
