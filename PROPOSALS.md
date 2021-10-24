@@ -45,4 +45,4 @@ What does that mean for your project? If it's been **two weeks** since anyone ra
 
 In the past the CLC has been criticized for its inefficiency and for having difficulties coordinating its members. We aspire to respond to comments, pull requests, and direct emails no more than 14 days after their arrival. We'd like to make sure that the Haskell community feels they can hold us accountable for this.
 
-To this end, if you believe that we are taking too long to respond, that the CLC is not doing its due diligence in monitoring active issues, or have other concers, we think it's fair that the [GHC Development team](link), the largest contributor to `base`, should have the power to reprimand the CLC when necessary.
+To this end, if you believe that we are taking too long to respond, that the CLC is not doing its due diligence in monitoring active issues, or have other concerns, we think it's fair that the [GHC Development team](link), the largest contributor to `base`, should have the power to reprimand the CLC when necessary.
