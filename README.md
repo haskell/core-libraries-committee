@@ -52,7 +52,7 @@ keep them in an appropriate shape and support healthy communication with
 contributors. If CLC finds a Core Library in a neglected state, it can
 source and install new maintainers or resolve situation by other means.
 
-Libraries, which wish CLC to help them with sourcing maintainers,
+Libraries that wish CLC to help them with sourcing maintainers
 may apply for adoption by CLC.
 
 Core Libraries are different from GHC boot libraries: some boot libraries are not Core
