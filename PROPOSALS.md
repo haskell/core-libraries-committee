@@ -37,7 +37,7 @@ Different ideas have different scales and scopes. Not every proposal will fit in
 
 If you've got a pet issue that's been sleeping in the depths of a mailing list for a while, and you think everyone's forgotten about it, now's your chance! Double-check the issues page in case someone else wants the same thing. If they do, upvote that one instead of making your own! Otherwise, it's your time to shine; write up a proposal and we'll be sure to give it due process.
 
-But alas, I hear you sigh, what if it gets abandoned _again_? Well, here is where issue trackers outshine mailing lists: keeping track of long-running projects is the entire point! In addition: once a proposal has been submitted, **it must be halted manually: lack of feedback from any CLC member _within 7 days_ should be interpreted as an all-clear to move forward**.
+But alas, I hear you sigh, what if it gets abandoned _again_? Well, here is where issue trackers outshine mailing lists: keeping track of long-running projects is the entire point! In addition: once a proposal has been submitted, **it must be halted manually: lack of feedback from any CLC member _within 14 days_ should be interpreted as an all-clear to move forward**.
 
 What does that mean for your project? If it's been **two weeks** since anyone raised concerns *that haven't been addressed*, you as the issue creator should take the initiative and create the GitLab merge request for `base`.
 
