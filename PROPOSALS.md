@@ -9,7 +9,7 @@ If you have an idea for a _language extension_ or _compiler warning_,
 you should follow the steps for the **GHC proposal process** instead of this one.
 Those are compiler-specific features that are outside the focus of the CLC.
 
-If you've got insight into how to improve documentation, performance,
+If you've got insight into how to improve performance,
 behaviour, or structure of the _source code_ of `base`, awesome!
 This is the stuff we'd love to hear about. You should follow the steps below,
 keeping in mind that the bigger the scope of your proposal, the more detailed it should be.
@@ -46,6 +46,15 @@ Here's what you can do to help make that happen:
     - If you've got some draft changes ready, you can include some excerpts here,
         before setting up a pull request.
 
+    - If your proposal includes breaking changes, you **must** include an impact analysis.
+        How many packages, approximately, will need to be updated?
+        What is your plan for smoothing over that process, and how long do you estimate it will take?
+
+The issue creator is responsible for seeing through the implementation of their proposal.
+The Core Libraries Committee is not your personal army of code monkeys
+to orchestrate to work on the project you want us to:
+you do the leg work yourself, and we'll pave the road as you walk.
+
 ## The "when"
 
 If you've got a pet issue that's been sleeping in the depths of a mailing list
@@ -77,4 +86,5 @@ the Haskell community feels they can hold us accountable for this.
 To this end, if you believe that we are taking too long to respond,
 that the CLC is not doing its due diligence in monitoring active issues,
 or have other concerns, we think it's fair that the [GHC Development team](link),
-the largest contributor to `base`, should have the power to reprimand the CLC when necessary.
+the owners of the `base` library, should have the power to withdraw custodianship
+from the committee.
