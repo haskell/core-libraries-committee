@@ -39,7 +39,7 @@ If you've got a pet issue that's been sleeping in the depths of a mailing list f
 
 But alas, I hear you sigh, what if it gets abandoned _again_? Well, here is where issue trackers outshine mailing lists: keeping track of long-running projects is the entire point! In addition: once a proposal has been submitted, **it must be halted manually: lack of feedback from any CLC member _within 7 days_ should be interpreted as an all-clear to move forward**.
 
-What does that mean for your project? If it's been **two weeks** since anyone raised concerns *that haven't been addressed*, you as the issue creator should take the initiative and create the pull request for the library you intend to change. If you don't have access (such as on GitLab), ping us individually in a reply to your issue and one of us will get back to you.
+What does that mean for your project? If it's been **two weeks** since anyone raised concerns *that haven't been addressed*, you as the issue creator should take the initiative and create the GitLab merge request for `base`.
 
 ## The "who"
 
