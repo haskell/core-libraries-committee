@@ -1,6 +1,6 @@
 # Proposals
 
-Want to make a change to one of the core libraries? Great! We'd love to hear your suggestion. Just follow the steps outlined here so that your idea doesn't lose traction!
+Want to make a change to `base`? Great! We'd love to hear your suggestion. Just follow the steps outlined here so that your idea doesn't lose traction!
 
 ## The "what"
 
