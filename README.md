@@ -11,7 +11,7 @@ The committee consists of 6 members:
 * Melanie Brown @cigsender (term ending January 2025)
 * Andrew Lelechenko @Bodigrim (chair, term ending January 2025)
 
-The committee takes decisions by simple majority voting.
+The committee makes decisions by simple majority voting.
 
 ## Contacts
 
