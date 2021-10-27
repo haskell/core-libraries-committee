@@ -4,7 +4,7 @@
 
 The committee consists of 6 members:
 
-* Daniel Cartwright @chessai (term ending January 2023)
+* chessai @chessai (term ending January 2023)
 * Cale Gibbard @cgibbard (term ending January 2023)
 * Emily Pillmore @emilypi (term ending January 2023)
 * George Wilson @gwils (term ending January 2023)
