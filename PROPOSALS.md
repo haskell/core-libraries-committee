@@ -66,14 +66,14 @@ write up a proposal and we'll be sure to give it due process.
 But alas, I hear you sigh, what if it gets abandoned _again_?
 Well, here is where issue trackers outshine mailing lists:
 keeping track of long-running projects is the entire point!
-In addition: once a proposal has been submitted,
-**it must be halted manually: lack of feedback from any CLC member
- _within 14 days_ should be interpreted as an all-clear to move forward**.
-
-What does that mean for your project? If it's been **two weeks** since
-anyone raised concerns *that haven't been addressed*,
-you as the issue creator should take the initiative
-and create the GitLab merge request for `base`.
+Typically the CLC will wait to start its internal voting process
+until public discussion about the proposal settles, but if
+the issue creator or main contributors find that too much bikeshedding
+is happening and wants to reach a verdict, they can choose to
+trigger the vote manually ("hey CLC, I'd like you to vote on this now :)").
+Once the voting process has begun or there have been no new comments
+on an issue for 7 days, the CLC will have 14 days to reach a conclusion,
+or reach out for further consideration if we can't get to one as it stands.
 
 ## The "who"
 
