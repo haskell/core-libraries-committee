@@ -84,6 +84,6 @@ the Haskell community feels they can hold us accountable for this.
 
 To this end, if you believe that we are taking too long to respond,
 that the CLC is not doing its due diligence in monitoring active issues,
-or have other concerns, we think it's fair that the [GHC Development team](link),
+or have other concerns, we think it's fair that the [GHC Development team](https://gitlab.haskell.org/ghc/ghc/-/wikis/team-ghc),
 the owners of the `base` library, should have the power to withdraw custodianship
 from the committee.
