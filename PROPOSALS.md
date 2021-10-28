@@ -28,12 +28,13 @@ Here's what you can do to help make that happen:
 
     - This will be the centre of discussion for your proposal.
         Related discussions, including those with CLC members, will happen here;
-        further actions, such as PRs to the relevant codebases, will reference this issue as they are taken.
+        merge requests to `base` and other related actions
+        will reference this issue as they are taken.
     - The title should clearly state the end goal of your proposal. For example:
 
         - "Replace all occurrences of `return` with `pure`"
         - "Factor out helper function from `functionName`"
-        - "Improve asymptotic efficiency of `sort`"
+        - "Improve asymptotic complexity of `sort`"
 
     - Write a paragraph or so (proportional to the scope) about what your proposal
         aims to achieve and why you want it implemented. Sell it to us!
@@ -50,10 +51,10 @@ Here's what you can do to help make that happen:
         How many packages, approximately, will need to be updated?
         What is your plan for smoothing over that process, and how long do you estimate it will take?
 
-The issue creator is responsible for seeing through the implementation of their proposal.
-The Core Libraries Committee is not your personal army of code monkeys
-to orchestrate to work on the project you want us to:
-you do the leg work yourself, and we'll pave the road as you walk.
+The issue creator is responsible for seeing their proposal through.
+The Core Libraries Committee's focus is around management,
+not implementation: you should do the work for your own proposals
+(or others' if you like them!) to show us that you think it's worth doing.
 
 ## The "when"
 
@@ -77,8 +78,6 @@ or reach out for further consideration if we can't get to one as it stands.
 
 ## The "who"
 
-In the past the CLC has been criticized for its inefficiency
-and for having difficulties coordinating its members.
 We aspire to respond to comments, pull requests, and direct emails
 no more than 14 days after their arrival. We'd like to make sure that
 the Haskell community feels they can hold us accountable for this.
