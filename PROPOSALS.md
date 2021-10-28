@@ -9,10 +9,10 @@ If you have an idea for a _language extension_ or _compiler warning_,
 you should follow the steps for the **GHC proposal process** instead of this one.
 Those are compiler-specific features that are outside the focus of the CLC.
 
-If you've got insight into how to improve performance,
-behaviour, or structure of the _source code_ of `base`, awesome!
-This is the stuff we'd love to hear about. You should follow the steps below,
-keeping in mind that the bigger the scope of your proposal, the more detailed it should be.
+If you've got insight into how to improve performance, behaviour,
+or structure of `base`, awesome! This is the stuff we'd love to hear about.
+You should follow the steps below, keeping in mind that the bigger
+the scope of your proposal, the more detailed it should be.
 
 ## The "how"
 
