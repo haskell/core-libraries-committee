@@ -62,7 +62,7 @@ Core Libraries are not required to boot GHC.
 ### Suggesting changes to Core libraries
 
 Because the CLC owns these libraries but does not maintain them, if you have an improvement
-to suggest for a core library (including one that affects several), please start by containing
+to suggest for a core library (including one that affects several), please start by contacting
 the maintainer(s) and/or main source repositories, as listed on Hackage. If the maintainer
 is unsure of whether to proceed, they can come to the CLC for further guidance. On the other
 hand, if you struggle to reach a responsive maintainer, come to the CLC directly.
