@@ -1,5 +1,10 @@
 # Core Libraries Committee
 
+## Quick Links
+
+* [Proposals under active consideration](https://github.com/haskell/core-libraries-committee/issues) are open issues.
+* [Accepted proposals](https://github.com/haskell/core-libraries-committee/issues?q=is%3Aissue+is%3Aclosed+label%3Aapproved) are closed issues with the `approved` label.
+
 ## Structure
 
 The committee consists of 6 members:
