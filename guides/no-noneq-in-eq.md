@@ -117,5 +117,5 @@ libraries.
 > compliant with this change in a backwards-compatible way. No CPP required.
 >
 > Migration guide and more info:
-> https://github.com/haskell/core-libraries-committee/guides/no-noneq-in-eq.md
+> https://github.com/haskell/core-libraries-committee/blob/main/guides/no-noneq-in-eq.md
 >
