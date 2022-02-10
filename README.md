@@ -14,6 +14,7 @@ The committee consists of 6 members:
 * Emily Pillmore @emilypi (term ending January 2023)
 * Melanie Brown @cigsender (term ending January 2025)
 * Andrew Lelechenko @Bodigrim (chair, term ending January 2025)
+* Tom Ellis @tomjaguarpaw (term ending February 2025)
 
 The committee makes decisions by simple majority voting.
 
@@ -26,8 +27,12 @@ core-libraries-committee at haskell dot org
 
 ## `base` package
 
-The primary responsibility of CLC is maintenance of `base` package (owned by GHC Team).
+The primary responsibility of CLC is to manage API changes of `base` package. The ownership of `base` belongs to GHC developers, and they can maintain it freely without CLC involvement as long as changes are invisible to clients. Changes which affect performance or laziness and similar are deemed visible. Documentation changes normally fall under GHC developers purview, unless significant ones (e. g., adding or changing type class laws).
 See more on the topic in `PROPOSALS.md`.
+
+## PVP
+
+CLC (jointly with Hackage Admins) maintains [Haskell Package Versioning Policy](https://pvp.haskell.org/). Minor changes (fixing typos, clarifications, recommended practices) can be approved by CLC vote, while bigger, potentially breaking changes require agreement from Hackage Admins as well. 
 
 ## Core Libraries
 
