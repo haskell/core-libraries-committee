@@ -20,23 +20,23 @@ The committee makes decisions by simple majority voting.
 
 ## Contacts
 
-Members of the public are suggested to contact CLC primarily via this issue tracker.
+Members of the public are suggested to contact CLC primarily via [this issue tracker](https://github.com/haskell/core-libraries-committee/issues).
 As a secondary medium with more limited visibility one can use a mail list
 core-libraries-committee at haskell dot org
 ([public archives](https://groups.google.com/g/haskell-core-libraries)).
 
 ## `base` package
 
-The primary responsibility of CLC is to manage API changes of `base` package. The ownership of `base` belongs to GHC developers, and they can maintain it freely without CLC involvement as long as changes are invisible to clients. Changes which affect performance or laziness and similar are deemed visible. Documentation changes normally fall under GHC developers purview, unless significant ones (e. g., adding or changing type class laws).
-See more on the topic in `PROPOSALS.md`.
+The primary responsibility of CLC is to manage API changes of `base` package. The ownership of `base` belongs to GHC developers, and they can maintain it freely without CLC involvement as long as changes are invisible to clients. Changes which affect performance or laziness and similar are deemed visible. Documentation changes normally fall under GHC developers purview, except significant ones (e. g., adding or changing type class laws).
+Proposals to change the API of the `base` package are managed by the process, described in [`PROPOSALS.md`](https://github.com/haskell/core-libraries-committee/blob/main/PROPOSALS.md).
 
 ## PVP
 
-CLC (jointly with Hackage Admins) maintains [Haskell Package Versioning Policy](https://pvp.haskell.org/). Minor changes (fixing typos, clarifications, recommended practices) can be approved by CLC vote, while bigger, potentially breaking changes require agreement from Hackage Admins as well. 
+CLC (jointly with Hackage Admins) maintains [Haskell Package Versioning Policy](https://pvp.haskell.org/). Minor changes (fixing typos, clarifications, recommended practices) can be approved by CLC vote, while bigger, potentially breaking changes require agreement from Hackage Admins as well. Proposals should be raised at [PVP issue tracker](https://github.com/haskell/pvp/issues).
 
 ## Core Libraries
 
-As a collective entity CLC owns, but does not maintain so-called Core Libraries:
+As a collective entity CLC owns, but does not maintain, so-called Core Libraries:
 
 * `array`,
 * `bytestring`,
@@ -67,6 +67,8 @@ may apply for adoption by CLC.
 Core Libraries are different from GHC boot libraries: some boot libraries are not Core
 (and as such are maintained either solely by GHC Team, or by third parties), and some
 Core Libraries are not required to boot GHC.
+
+Questions related to management of Core Libraries are usually discussed in respective issue trackers. Please bring them to CLC attention by CC'ing CLC members or pinging by email to core-libraries-committee at haskell dot org.
 
 ### Suggesting changes to Core libraries
 
