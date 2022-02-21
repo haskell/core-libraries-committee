@@ -3,7 +3,7 @@
 CLC has approved the [proposal to remove the `ST` instance of the `MonadFail` class 
 from `base`][proposal]. `MonadFail` consists of the single method `fail`, which is
 meant to be implemented in terms of the monad itself. In contrast, the `ST` instance
-currently (GHC 9.2, `base-4.16.0.0`) have:
+currently (GHC 9.2, `base-4.16.0.0`) has:
 
 ```haskell
     fail s = errorWithoutStackTrace s
