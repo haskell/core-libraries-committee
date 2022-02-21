@@ -40,7 +40,7 @@ You are affected if you use the following inside `ST` monad.
   (x:xs) <- someFunc
 ```
 
-you can replace it with a combination of `bind` and `let`, e.g.:
+you can replace it with a combination of `<-` and `let`, e.g.:
 
 ```haskell
   xs' <- someFunc
