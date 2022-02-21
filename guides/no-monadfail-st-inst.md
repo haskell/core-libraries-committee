@@ -60,8 +60,8 @@ libraries.
 > CLC has approved the proposal to remove the `ST` instance of `MonadFail` from `base`
 > (https://github.com/haskell/core-libraries-committee/issues/33).
 >
-> The implementation of the proposal is delayed at least to GHC 9.4 and likely
-> to GHC 9.6, but one can already future-proof code to be
+> The implementation of the proposal is delayed to GHC 9.4,
+> but one can already future-proof code to be
 > compliant with this change in a backwards-compatible way. No CPP required.
 >
 > Migration guide and more info:
