@@ -15,9 +15,7 @@ This goes against the above-mentioned idea behind the `fail` method.
 
 # When
 
-At the very earliest the change may appear in GHC 9.4 (~ Q3 2022), but
-given that a feature freeze for 9.4 is coming soon, it's more likely to
-happen in GHC 9.6 (~ Q2 2023).
+At the very earliest the change may appear in GHC 9.4 (~ Q3 2022).
 
 # How
 
