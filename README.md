@@ -36,7 +36,15 @@ CLC (jointly with Hackage Admins) maintains [Haskell Package Versioning Policy](
 
 ## Core Libraries
 
-As a collective entity CLC owns, but does not maintain, so-called Core Libraries:
+As a collective entity CLC owns, but does not maintain, so-called Core Libraries, which are libraries
+* that are depended on by many other packages, and hence play a particularly important role in the Haskell ecosystem; and
+* whose maintainers have agreed (or requested) support from the CLC in ensuring the long-term health of the library.
+
+The overall goals are
+* to reduce pressure on, and add support for, maintainers whose libraries have grown very popular; and
+* to provide the community with a way to deal with the single-point-of-failure problem when a maintainer of a widely-used library becomes unavailable (perhaps for good reasons).
+
+Current list of Core Libraries:
 
 * `array`,
 * `bytestring`,
