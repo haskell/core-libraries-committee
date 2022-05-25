@@ -12,7 +12,7 @@ The committee consists of 6 members:
 * chessai @chessai (term ending January 2023)
 * Cale Gibbard @cgibbard (term ending January 2023)
 * Emily Pillmore @emilypi (term ending January 2023)
-* Melanie Brown @cigsender (term ending January 2025)
+* Melanie Phoenix @mixphix (term ending January 2025)
 * Andrew Lelechenko @Bodigrim (chair, term ending January 2025)
 * Tom Ellis @tomjaguarpaw (term ending February 2025)
 
