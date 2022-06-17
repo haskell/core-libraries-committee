@@ -33,11 +33,14 @@ This is a breaking change:
 
 However, the breakage is of limited scope.
 An impact analysis (please see [comments following here](https://github.com/haskell/core-libraries-committee/issues/50#issuecomment-1141704595))
-showed that none of the packages that sucessfully pass dependency resolution on Stackage (`nightly-2022-03-20`) break with this change.
+showed that none of the packages that sucessfully pass dependency resolution on Stackage `nightly-2022-03-20` break with this change.
+
+With a newer stackage nightly, `pandoc` breaks, and a patch has already been [submitted][pandoc-patch].
 
 The migration policy for this change is backward-compatible: you can migrate
 already and still retain compatibility with existing GHCs. Because of this,
 CLC suggests applying patches at your earliest convenience.
+You can also refer to the [`pandoc` patch][pandoc-patch] as an example.
 
 0. To avoid ambiguity errors with your own versions of `liftA2`, we recommend qualifying the usages of your version.
 
@@ -65,6 +68,7 @@ CLC suggests applying patches at your earliest convenience.
     ```
 
 
+[pandoc-patch]: https://github.com/jgm/pandoc/pull/8132
 # PR template
 
 Here is a template, which you can use when raising PRs against affected
