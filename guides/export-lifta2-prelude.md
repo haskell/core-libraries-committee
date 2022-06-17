@@ -67,6 +67,12 @@ You can also refer to the [`pandoc` patch][pandoc-patch] as an example.
     import Prelude hiding (Applicative(..))
     ```
 
+2. There are niche cases where adding more CPP might be required to avoid warnings.
+
+Due to the fact that `liftA2` wasn't always in the `Applicative` class,
+codebases that aim to support older `base` versions (`<4.10`) will not be able to rely on
+hiding `Applicative` from `Prelude` and instead importing it from `Control.Applicative` to get `liftA2`.
+For an example of this, see https://github.com/haskell/cabal/pull/8223.
 
 [pandoc-patch]: https://github.com/jgm/pandoc/pull/8132
 # PR template
