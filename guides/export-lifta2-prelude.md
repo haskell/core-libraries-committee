@@ -40,7 +40,12 @@ With a newer stackage nightly, `pandoc` breaks, and a patch has already been [su
 The migration policy for this change is backward-compatible: you can migrate
 already and still retain compatibility with existing GHCs. Because of this,
 CLC suggests applying patches at your earliest convenience.
-You can also refer to the [`pandoc` patch][pandoc-patch] as an example.
+
+You can also refer to the following submitted patches for examples:
+
+* [`Cabal-syntax`](https://github.com/haskell/cabal/pull/8223)
+* [`containers`](https://github.com/haskell/containers/pull/841)
+* [`pandoc` patch][pandoc-patch]
 
 0. To avoid ambiguity errors with your own versions of `liftA2`, we recommend qualifying the usages of your version.
 
