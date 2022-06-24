@@ -45,7 +45,7 @@ You can also refer to the following submitted patches for examples:
 
 * [`Cabal-syntax`](https://github.com/haskell/cabal/pull/8223)
 * [`containers`](https://github.com/haskell/containers/pull/841)
-* [`pandoc` patch][pandoc-patch]
+* [`pandoc`][pandoc-patch]
 
 0. To avoid ambiguity errors with your own versions of `liftA2`, we recommend qualifying the usages of your version.
 
