@@ -16,7 +16,7 @@ The committee consists of 6 members:
 * Andrew Lelechenko @Bodigrim (chair, term ending January 2025)
 * Tom Ellis @tomjaguarpaw (term ending February 2025)
 
-The committee makes decisions by simple majority voting.
+The committee makes decisions by simple majority voting. CLC members are also allowed to submit their own [proposals][proposals] and vote on them.
 
 ## Contacts
 
@@ -28,7 +28,9 @@ core-libraries-committee at haskell dot org
 ## `base` package
 
 The primary responsibility of CLC is to manage API changes of `base` package. The ownership of `base` belongs to GHC developers, and they can maintain it freely without CLC involvement as long as changes are invisible to clients. Changes which affect performance or laziness and similar are deemed visible. Documentation changes normally fall under GHC developers purview, except significant ones (e. g., adding or changing type class laws).
-Proposals to change the API of the `base` package are managed by the process, described in [`PROPOSALS.md`](https://github.com/haskell/core-libraries-committee/blob/main/PROPOSALS.md).
+Proposals to change the API of the `base` package are managed by the process, described in [`PROPOSALS.md`][proposals].
+
+[proposals]: https://github.com/haskell/core-libraries-committee/blob/main/PROPOSALS.md
 
 ## PVP
 
