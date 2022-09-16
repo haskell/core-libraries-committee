@@ -28,16 +28,16 @@ At the very earliest, the change may appear in GHC 9.6 (~ Q1 2023).
 
 This is a breaking change:
 
-1. People could define e.g. `Eq1` without `Eq`, or `Eq2` without `Eq1`
+1. People can no longer define e.g. `Eq1` without `Eq`, or `Eq2` without `Eq1`
 
-2. People could write complicated instances on various abstract machinary that doesn't abide by the new superclasses.
+2. People can no longer write complicated instances on various abstract machinery that doesn't abide by the new superclasses.
 
 However, the breakage is of limited scope.
 An impact analysis (please see [comments following here](https://github.com/haskell/core-libraries-committee/issues/10#issuecomment-1166669613))
-showed that a only handle of packages that sucessfully pass dependency resolution on Stackage `nightly-2022-06-17` break with this change.
+showed that only a few of the packages that sucessfully pass dependency resolution on Stackage `nightly-2022-06-17` break with this change.
 Patches have been submitted to each of them.
 
-The migration policy for this change is backward-compatible: you can migrate already and still retain compatibility with existing GHCs.
+The migration policy for this change is backwards-compatible: you can migrate already and still retain compatibility with existing GHCs.
 Because of this, CLC suggests applying patches at your earliest convenience.
 
 1. Add any missing instances
@@ -58,7 +58,7 @@ Because of this, CLC suggests applying patches at your earliest convenience.
 
 Note what is *not* a breaking change is the changing of the instances for `Compose` etc.
 Thanks to the new superclasses, the old instance constraints imply the new instance constraints, so existing generic code using those types will continue to work.
-`Compose` and friends are much more common than the `*1` and `*2` classes, so this yields far less breakage over all.
+`Compose` and friends are much more common than the `*1` and `*2` classes, so this yields far less breakage overall.
 
 # PR template
 
