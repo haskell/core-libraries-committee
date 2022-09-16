@@ -46,12 +46,28 @@ Patches have been submitted to each of them.
 The migration policy for this change is backwards-compatible: you can migrate already and still retain compatibility with existing GHCs.
 Because of this, CLC suggests applying patches at your earliest convenience.
 
-1. Add any missing instances
+1. Add any missing instances.
+
+   For example, if you defined instance `Eq1 Foo` but omitted instance `Eq a => Eq (Foo a)`, you must now define the latter.
+   You can do this with `(==) = eq1`.
+   Likewise, if you defined instance `Eq2 Foo` without `Eq a => Eq1 (Foo a)`, you must also define the latter.
+   The default method can be used in that case.
+
+   Example changes:
+
+   - [Add `Ord (Tree a)` instance haskell/containers#761](https://github.com/haskell/containers/pull/761)
+
+   - [Add Eq and Ord instances for NonEmptyMap ChristopherDavenport/nonemptymap#7](https://github.com/ChristopherDavenport/nonemptymap/pull/7)
+
+   - [Add instance Show (SpecCommand context m t) codedownio/sandwich#53](https://github.com/codedownio/sandwich/pull/53)
+
+   - [Add instance Eq (SexpF a) esmolanka/sexp-grammar#26](https://github.com/esmolanka/sexp-grammar/pull/26)
 
 2. Sadly there is no exact pattern for this, but here are two examples:
 
-   - https://github.com/haskell-streaming/streaming/pull/113
-   - https://github.com/RyanGlScott/text-show/pull/57
+   - [Share code between Show (Stream f m r) and Show1 (Stream f m) haskell-streaming/streaming#113](https://github.com/haskell-streaming/streaming/pull/113)
+
+   - [Scale back instances in `TextShow.FromStringTextShow` RyanGlScott/text-show#57](https://github.com/RyanGlScott/text-show/pull/57)
 
    As one can see, this comes from rather fancy stuff.
 
