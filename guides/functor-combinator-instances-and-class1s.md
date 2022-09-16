@@ -78,7 +78,8 @@ Because of this, CLC suggests applying patches at your earliest convenience.
    This violates the superclass.
    The instance must instead "pass through" `String`-based shows to `String`-based shows.
 
-Note what is *not* a breaking change is the changing of the instances for `Compose` etc.
+Note that in contrast to the above, the other half of proposal 10 are *not* breaking changes.
+In conjunction with the changes to the classes, the changes to instances for `Compose` and other such data types is backwards compatible.
 Thanks to the new superclasses, the old instance constraints imply the new instance constraints, so existing generic code using those types will continue to work.
 `Compose` and friends are much more common than the `*1` and `*2` classes, so this yields far less breakage overall.
 
