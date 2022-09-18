@@ -34,7 +34,7 @@ At the very earliest, the change may appear in GHC 9.6 (~ Q1 2023).
 
 This is a breaking change:
 
-1. People can no longer define e.g. `Eq1` without `Eq`, or `Eq2` without `Eq1`
+1. People can no longer define e.g. `Eq1` without `Eq`, or `Eq2` without `Eq1`.
 
 2. People can no longer write complicated instances on various abstract machinery that doesn't abide by the new superclasses.
 
