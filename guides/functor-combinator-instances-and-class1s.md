@@ -1,6 +1,6 @@
 # What
 
-CLC has approved the [proposal #10](https://github.com/haskell/core-libraries-committee/issues/10), to relax instances for Functor combinators and put superclasses on \<class>1 and \<class2> to make the change less-breaking.
+CLC has approved the [proposal #10](https://github.com/haskell/core-libraries-committee/issues/10), to relax instances for Functor combinators and put superclasses on \<class>1 and \<class>2 to make the change less-breaking.
 The effected classes are:
 
 - `Eq1`, `Eq2`
