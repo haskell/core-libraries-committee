@@ -52,6 +52,7 @@ Current list of Core Libraries:
 * `bytestring`,
 * `deepseq`,
 * `directory`,
+* `entropy`,
 * `filepath`,
 * `mtl`,
 * `primitive`,
