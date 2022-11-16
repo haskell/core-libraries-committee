@@ -11,7 +11,7 @@ At the very earliest, the change may appear in GHC 9.6 (~ Q1 2023), but more lik
 
 This is not a breaking change, unless a package forces `-Werror`.
 
-If you don't want to change any Haskell code and happy to carry on with `Data.List.{head,tail}`:
+If you don't want to change any Haskell code and want to carry on with using `Data.List.{head,tail}`:
 
 1. If you use `-Werror`, set `-Wwarn=warnings-deprecations` to downgrade this area of compiler messages from errors to warnings, so that your build can succeed.
 
