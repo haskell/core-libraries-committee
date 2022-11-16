@@ -16,6 +16,7 @@ If you don't want to change any Haskell code and want to carry on with using `Da
 1. If you use `-Werror`, set `-Wwarn=warnings-deprecations` to downgrade this area of compiler messages from errors to warnings, so that your build can succeed.
 
 2. If you are annoyed by warnings, set `-Wno-warnings-deprecations` to quash this area of compiler messages. You can also put `:set -Wno-warnings-deprecations` into `.ghci` config file.
+   Note that this also disables any other custom warnings and deprecation warnings!
 
 If you are happy to change code to eliminate warning messages:
 
