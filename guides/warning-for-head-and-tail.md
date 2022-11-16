@@ -1,6 +1,6 @@
 # What
 
-CLC has approved the
+CLC has approved the proposal to
 [add `{-# WARNING #-}` to `Data.List.{head,tail}`](https://github.com/haskell/core-libraries-committee/issues/87). This means that the existing users of these functions will receive a compile-time warning about their partiality.
 
 # When
