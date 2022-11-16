@@ -19,7 +19,7 @@ If you don't want to change any Haskell code and happy to carry on with `Data.Li
 
 If you are happy to change code to eliminate warning messages:
 
-1. The easiest way to migrate away from `tail` is to replace it with `drop 1`. This is a drop-in replacement.
+1. The easiest way to migrate away from `tail` is to replace it with `drop 1`. This is a drop-in replacement unless you are relying on `tail`'s partiality.
 
 2. Instead of `head` you can use explicit pattern matching: replace any `head foo` with
 
