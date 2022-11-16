@@ -50,7 +50,7 @@ Consider contributing to https://github.com/ghc-proposals/ghc-proposals/pull/454
 
 Here is a template, which you can use when raising PRs against affected libraries.
 
-> Title: Avoid Data.List.{head,tail}
+> Title: Avoid `Data.List.{head,tail}`
 >
 > CLC has approved the proposal to add `{-# WARNING #-}` to `Data.List.{head,tail}`
 > (https://github.com/haskell/core-libraries-committee/issues/87).
