@@ -33,7 +33,7 @@ If you are happy to change code to eliminate warning messages:
 3. Another option is to use [`Data.List.uncons`](https://hackage.haskell.org/package/base/docs/Data-List.html#v:uncons): replace any `head foo` with
 
     ```haskell
-    fromMaybe (error "...") fst (uncons foo)
+    maybe (error "...") fst (uncons foo)
     ```
 
 4. It is even better to enforce non-emptiness of the list in types, using [`Data.List.NonEmpty`](https://hackage.haskell.org/package/base/docs/Data-List-NonEmpty.html). This might however require non-local refactoring.
