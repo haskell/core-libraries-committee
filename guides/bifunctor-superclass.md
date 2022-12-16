@@ -64,7 +64,7 @@ In the context of this migration we recommend to define `fmap` canonically, beca
 
 # PR template
 
-Here is a template for (1), which you can use when raising PRs against affected libraries.
+Here is a template, which you can use when raising PRs against affected libraries.
 
 > Title: Add Functor instance for _
 >
