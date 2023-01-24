@@ -47,9 +47,7 @@ Here's what you can do to help make that happen:
     - If you've got some draft changes ready, you can include some excerpts here,
         before setting up a pull request.
 
-    - If your proposal includes breaking changes, you **must** include an impact analysis.
-        How many packages, approximately, will need to be updated?
-        What is your plan for smoothing over that process, and how long do you estimate it will take?
+    - If your proposal includes breaking changes, you **must** include an [impact assessment](#impact-assessments). A [migration guide](https://github.com/haskell/core-libraries-committee/tree/main/guides) may also be requested if the breakage affects many, or critical, libraries.
 
 The issue creator is responsible for seeing their proposal through.
 The Core Libraries Committee's focus is around management,
@@ -87,3 +85,14 @@ that the CLC is not doing its due diligence in monitoring active issues,
 or have other concerns, we think it's fair that the [GHC Development team](https://gitlab.haskell.org/ghc/ghc/-/wikis/team-ghc),
 the owners of the `base` library, should have the power to withdraw custodianship
 from the committee.
+
+## Impact assessments
+
+To provide a clearer picture of the downstream effects of a proposal, the CLC requires that proposers draft an impact assessment of their changes before a final decision is reached. An impact assessment MUST be completed if the proposal contains [breaking changes](https://pvp.haskell.org/), and is RECOMMENDED even if the changes are simply additive, especially in cases of anticipated name clashing or when re-exporting from the Prelude.
+
+- Fork and build [a newer version of GHC](https://gitlab.haskell.org/ghc/ghc#building-installing) (say, the latest official release) that includes the changes made in your proposal. You should also make a merge request with your changes and add it to your proposal's issue.
+- Try to build [`clc-stackage`](https://github.com/Bodigrim/clc-stackage) using your custom souped-up GHC. Point out important breakages in your update.
+- Once everything that breaks receives a patch, let us know in a comment where they've been submitted. Then, the committee will be able to vote!
+- If your proposal is approved, we encourage you to raise pull requests on the affected packages. Making it easy for maintainers to adapt to new changes increases the effectiveness of the proposal process :)
+
+For more details, visit the [`clc-stackage` how-to](https://github.com/Bodigrim/clc-stackage#how-to).
