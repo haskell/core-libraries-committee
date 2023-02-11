@@ -7,14 +7,15 @@
 
 ## Structure
 
-The committee consists of 6 members:
+The committee consists of 7 members:
 
-* chessai @chessai (term ending January 2023)
-* Cale Gibbard @cgibbard (term ending January 2023)
-* Emily Pillmore @emilypi (term ending January 2023)
 * Melanie Phoenix @mixphix (term ending January 2025)
 * Andrew Lelechenko @Bodigrim (chair, term ending January 2025)
 * Tom Ellis @tomjaguarpaw (term ending February 2025)
+* Moritz Angermann @angerman (term ending February 2026)
+* Dmitrii Kovanikov @chshersh (term ending February 2026)
+* Julian Ospald @hasufell (term ending February 2026)
+* Matt Parsons @parsonsmatt (term ending February 2026)
 
 The committee makes decisions by simple majority voting. CLC members are also allowed to submit their own [proposals][proposals] and vote on them.
 
