@@ -3,6 +3,15 @@
 Want to make a change to `base`? Great! We'd love to hear your suggestion.
 Just follow the steps outlined here so that your idea doesn't lose traction!
 
+TL;DR Quick overview of the proposal lifecycle:
+
+1. [Create an issue][open-issue] with your idea.
+2. (When requested) Implement the proposal.
+3. (If requested) Make [impact assessment](#impact-assessments) (it's mandatory for breaking changes).
+4. (If requested) Let us know in a comment about patches to impacted libraries.
+5. Wait for the vote.
+6. (If accepted) Write a migration guide (for proposals with breaking changes).
+
 ## The "what"
 
 If you have an idea for a _language extension_ or _compiler warning_,
@@ -23,7 +32,7 @@ when all you want to do is make an optimization to a function or two.
 However, a tremendous idea will only be implemented if you can convince others it's good, too.
 Here's what you can do to help make that happen:
 
-- [Open an issue](https://github.com/haskell/core-libraries-committee/issues/new)
+- [Open an issue][open-issue]
     at the Core Libraries Committee GitHub page.
 
     - This will be the centre of discussion for your proposal.
@@ -53,6 +62,16 @@ The issue creator is responsible for seeing their proposal through.
 The Core Libraries Committee's focus is around management,
 not implementation: you should do the work for your own proposals
 (or others' if you like them!) to show us that you think it's worth doing.
+
+To be more precise, as the proposal author, you will be expected to do the following
+tasks, or find volunteers who'll do this for you. You may post a brief proposal and
+request feedback on feasibility before investing time and effort in the full process.
+
+1. Refine your proposal.
+2. Make impact assessment.
+3. Write a migration guide.
+4. Do some work on writing migration patches.
+5. Implement the proposal.
 
 ## The "when"
 
@@ -96,3 +115,45 @@ To provide a clearer picture of the downstream effects of a proposal, the CLC re
 - If your proposal is approved, we encourage you to raise pull requests on the affected packages. Making it easy for maintainers to adapt to new changes increases the effectiveness of the proposal process :)
 
 For more details, visit the [`clc-stackage` how-to](https://github.com/Bodigrim/clc-stackage#how-to).
+
+## Proposal lifecycle
+
+Your proposal may move through different stages which is indicated by the corresponding label:
+
+* ![awaits-proposal][label:awaits-proposal]
+  Your proposal should be written with more specifics to produce an actionable item.
+* ![awaits-ghc-proposal][label:awaits-ghc-proposal]
+  GHC should be changed before further movement on your proposal.
+* ![awaits-impact-assessment][label:awaits-impact-assessment]
+  You need to perform impact assessment so CLC can better understand the
+  breakage impact.
+* ![awaits-MR][label:awaits-MR]
+  You need to implement the proposal in `base` because it's hard to vote before
+  seeing the actual implementation.
+* ![approved][label:approved]
+  Congratulations! Your proposal is approved. Now you need to implement it (if
+  you haven't done it yet) and help others migrate their code in case of
+  breaking changes.
+* ![declined][label:declined]
+  Your proposal has been declined. At this point, you don't need to do anything
+  with it.
+* ![out-of-scope][label:out-of-scope]
+  Your proposal is not a subject of a CLC vote.
+* ![withdrawn][label:withdrawn]
+  You decided to not pursue the proposal explicitly.
+* ![abandoned][label:abandoned]
+  The proposal author is MIA and nobody has taken the proposal over.
+
+<!-- Helpful links -->
+[open-issue]: https://github.com/haskell/core-libraries-committee/issues/new
+
+<!-- Labels -->
+[label:awaits-proposal]: https://img.shields.io/github/labels/haskell/core-libraries-committee/awaits-proposal
+[label:awaits-ghc-proposal]: https://img.shields.io/github/labels/haskell/core-libraries-committee/awaits-ghc-proposal
+[label:awaits-impact-assessment]: https://img.shields.io/github/labels/haskell/core-libraries-committee/awaits-impact-assessment
+[label:awaits-MR]: https://img.shields.io/github/labels/haskell/core-libraries-committee/awaits-MR
+[label:approved]: https://img.shields.io/github/labels/haskell/core-libraries-committee/approved
+[label:declined]: https://img.shields.io/github/labels/haskell/core-libraries-committee/declined
+[label:out-of-scope]: https://img.shields.io/github/labels/haskell/core-libraries-committee/out-of-scope
+[label:withdrawn]: https://img.shields.io/github/labels/haskell/core-libraries-committee/withdrawn
+[label:abandoned]: https://img.shields.io/github/labels/haskell/core-libraries-committee/abandoned
