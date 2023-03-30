@@ -26,9 +26,7 @@ class Eq a where
 
 The proposal was approved conditionally, pending a resolution of
 [-Winline-rule-shadowing: Different for single and multi method classes?](https://gitlab.haskell.org/ghc/ghc/-/issues/20535)
-issue. At the very earliest the change may appear in GHC 9.4 (~ Q3 2022), but
-given that a feature freeze for 9.4 is coming soon, it's more likely to
-happen in GHC 9.6 (~ Q2 2023).
+issue. At the very earliest the change may appear in GHC 9.8.
 
 # How
 

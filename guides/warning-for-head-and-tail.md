@@ -5,7 +5,7 @@ CLC has approved the proposal to
 
 # When
 
-At the very earliest, the change may appear in GHC 9.6 (~ Q1 2023), but more likely GHC 9.8 (~ Q4 2023).
+The change is scheduled for GHC 9.8.
 
 # How
 

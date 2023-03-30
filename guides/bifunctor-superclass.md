@@ -14,7 +14,7 @@ class (forall a. Functor (p a)) => Bifunctor p where
 
 # When
 
-At the very earliest, the change may appear in GHC 9.6 (~ Q1 2023).
+The change has happened in GHC 9.6.
 
 # How
 

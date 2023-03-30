@@ -15,7 +15,7 @@ This goes against the above-mentioned idea behind the `fail` method.
 
 # When
 
-At the very earliest the change may appear in GHC 9.4 (~ Q3 2022).
+The change has happened in GHC 9.4.
 
 # How
 
