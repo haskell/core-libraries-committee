@@ -13,10 +13,10 @@ This is not a breaking change, unless a package forces `-Werror`.
 
 If you don't want to change any Haskell code and want to carry on with using `Data.List.{head,tail}`:
 
-1. If you use `-Werror`, set `-Wwarn=warnings-deprecations` to downgrade this area of compiler messages from errors to warnings, so that your build can succeed.
+1. If you use `-Werror`, set `-Wwarn=x-partial` to downgrade this area of compiler messages from errors to warnings, so that your build can succeed.
 
-2. If you are annoyed by warnings, set `-Wno-warnings-deprecations` to quash this area of compiler messages. You can also put `:set -Wno-warnings-deprecations` into `.ghci` config file.
-   Note that this also disables any other custom warnings and deprecation warnings!
+2. If you are annoyed by warnings, set `-Wno-x-partial` to quash this area of compiler messages. You can also put `:set -Wno-x-partial` into `.ghci` config file.
+   Note that this also disables any other warnings in the custom `-x-partial` warning group!
 
 If you are happy to change code to eliminate warning messages:
 
@@ -54,10 +54,8 @@ Here is a template, which you can use when raising PRs against affected librarie
 >
 > CLC has approved the proposal to add `{-# WARNING #-}` to `Data.List.{head,tail}`
 > (https://github.com/haskell/core-libraries-committee/issues/87).
-> It means that usage of `head` and `tail` will emit compile-time warnings.
->
-> The implementation of the proposal is delayed at least to GHC 9.6,
-> but it's advisable to start a gradual migration away already.
+> It means that usage of `head` and `tail` will emit compile-time warnings
+> starting from GHC 9.8.
 >
 > Migration guide and more info:
 > https://github.com/haskell/core-libraries-committee/blob/main/guides/warning-for-head-and-tail.md
