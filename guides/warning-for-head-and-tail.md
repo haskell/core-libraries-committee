@@ -42,10 +42,6 @@ If you are happy to change code to eliminate warning messages:
 
 6. As an ultimate measure you can hide `Prelude.{head,tail}` and define your own in a utility module.
 
-# Related work
-
-Consider contributing to https://github.com/ghc-proposals/ghc-proposals/pull/454 and/or https://github.com/ghc-proposals/ghc-proposals/pull/541, which expand and make GHC warnings mechanism more flexible, allowing more mitigation strategies for this sort of changes.
-
 # PR template
 
 Here is a template, which you can use when raising PRs against affected libraries.
