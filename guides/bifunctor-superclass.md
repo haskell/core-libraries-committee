@@ -24,7 +24,7 @@ This is a breaking change:
 
 However, the breakage is of limited scope.
 An impact analysis (please see [comments following here](https://github.com/haskell/core-libraries-committee/issues/91#issuecomment-1278299233))
-showed that only a few of the packages that sucessfully pass dependency resolution on Stackage `nightly-2022-06-17` break with this change.
+showed that only a few of the packages that successfully pass dependency resolution on Stackage `nightly-2022-06-17` break with this change.
 Patches have been submitted to each of them.
 
 The migration policy for this change is backwards-compatible: you can migrate already and still retain compatibility with existing GHCs.
@@ -34,8 +34,8 @@ Because of this, CLC suggests applying patches at your earliest convenience.
 
 If you defined instance `Bifunctor Foo` but omitted instance `Functor (Foo a)`, you must now define the latter.
 
-You can do this by adding the language pragma `DeriveFunctor` and declaring `derive Functor` at the data type definition.
-Alternatively you can explicitely define `fmap`.
+You can do this by adding the language pragma `{-# LANGUAGE DeriveFunctor #-}` and declaring `deriving Functor` at the data type definition.
+Alternatively you can explicitly define `fmap`.
 
 In the context of this migration we recommend to define `fmap` canonically, because there could be a `noncanonical-bifunctor-instances` warning in the future. Canonical instances define the subclass in terms of the superclass but not vice versa. Accordingly the definitions `fmap = second` and `fmap = bimap id` are noncanonical. We recommend to avoid them and move any definition of `second` to `fmap` to instead define `second = fmap`:
    ```diff

@@ -40,7 +40,7 @@ This is a breaking change:
 
 However, the breakage is of limited scope.
 An impact analysis (please see [comments following here](https://github.com/haskell/core-libraries-committee/issues/10#issuecomment-1166669613))
-showed that only a few of the packages that sucessfully pass dependency resolution on Stackage `nightly-2022-06-17` break with this change.
+showed that only a few of the packages that successfully pass dependency resolution on Stackage `nightly-2022-06-17` break with this change.
 Patches have been submitted to each of them.
 
 The migration policy for this change is backwards-compatible: you can migrate already and still retain compatibility with existing GHCs.
