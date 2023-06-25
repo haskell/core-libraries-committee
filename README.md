@@ -64,6 +64,7 @@ Current list of Core Libraries:
 * `text`,
 * `unix`,
 * `vector`,
+* `vector-binary-instances`,
 * `Win32`.
 
 Maintainers of Core Libraries may at their own accord seek CLC approval for
