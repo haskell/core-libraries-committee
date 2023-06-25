@@ -1,7 +1,7 @@
 # What
 
 CLC has approved the
-[proposal to export `liftA2` from `class Applicative` from `Prelude`](https://github.com/haskell/core-libraries-committee/issues/3).
+[proposal to export `liftA2` from `class Applicative` from `Prelude`](https://github.com/haskell/core-libraries-committee/issues/50).
 This effectively means that the entirety of the class will now be exported from `Prelude`.
 
 Before:
@@ -27,7 +27,7 @@ The change has happened in GHC 9.6.
 
 # How
 
-This is a breaking change:
+While adding new entities is not a breaking change according to PVP, some packages might be broken, because:
 * people can and have defined their own `liftA2`s, causing ambiguity errors
 * it can cause new redundant import warnings
 
