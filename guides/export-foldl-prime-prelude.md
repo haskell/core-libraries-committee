@@ -22,7 +22,8 @@ module Prelude (
 
 # When
 
-The change is likely to happen in GHC 9.8 / `base-4.19`.
+The change might happen in GHC 9.8 / `base-4.19`, but more likely to be delayed
+until GHC 9.10 / `base-4.20`.
 
 # How
 
