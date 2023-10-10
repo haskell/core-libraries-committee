@@ -72,6 +72,7 @@ request feedback on feasibility before investing time and effort in the full pro
 3. Write a migration guide.
 4. Do some work on writing migration patches.
 5. Implement the proposal.
+    * note that you should follow [GHC's "Contributing a Patch" guidelines](https://gitlab.haskell.org/ghc/ghc/-/wikis/Contributing-a-Patch) when creating an MR (e.g. [appropriate commit messages](https://gitlab.haskell.org/ghc/ghc/-/wikis/Contributing-a-Patch#22-commit-messages))
 
 ## The "when"
 
