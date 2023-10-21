@@ -70,9 +70,19 @@ request feedback on feasibility before investing time and effort in the full pro
 1. Refine your proposal.
 2. Make impact assessment.
 3. Write a migration guide.
-4. Do some work on writing migration patches.
+4. Do some work on writing migration patches. Patches can be provided in several forms:
+    * raise draft PRs to affected packages, but communicate clearly that
+      the proposal is not accepted yet,
+    * create fork repositories with patched packages
+      and a `cabal.project` template using them,
+    * or just share patch files, in the same format as
+      [`head.hackage`](https://gitlab.haskell.org/ghc/head.hackage) does.
 5. Implement the proposal.
-    * note that you should follow [GHC's "Contributing a Patch" guidelines](https://gitlab.haskell.org/ghc/ghc/-/wikis/Contributing-a-Patch) when creating an MR (e.g. [appropriate commit messages](https://gitlab.haskell.org/ghc/ghc/-/wikis/Contributing-a-Patch#22-commit-messages))
+    * Note that you should follow [GHC's "Contributing a Patch" guidelines](https://gitlab.haskell.org/ghc/ghc/-/wikis/Contributing-a-Patch) when creating an MR (e.g. [appropriate commit messages](https://gitlab.haskell.org/ghc/ghc/-/wikis/Contributing-a-Patch#22-commit-messages)),
+    * Make sure to include a link to the CLC discussion into the commit message.
+    * Make sure to update `libraries/base/changelog.md`.
+    * Writing tests is always a good idea and especially crucial for
+      semantic changes, if feasible.
 
 ## The "when"
 
