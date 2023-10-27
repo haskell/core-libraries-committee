@@ -12,6 +12,9 @@ TL;DR Quick overview of the proposal lifecycle:
 5. Wait for the vote.
 6. (If accepted) Write a migration guide (for proposals with breaking changes).
 
+If your proposal involves removing an obscure or GHC-internal definition from
+`base`, you may alternatively follow the [deprecation process](./DEPRECATION.md).
+
 ## The "what"
 
 If you have an idea for a _language extension_ or _compiler warning_,
