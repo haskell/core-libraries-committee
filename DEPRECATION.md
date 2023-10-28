@@ -88,13 +88,13 @@ deprecation. The CLC are welcome, but not obliged, to comment on implementation 
 Each proposal will include a minimum deprecation period, typically based on the
 following guidelines:
 
- * definitions that have fewer than 50 users on Hackage need a deprecation
+ * definitions that occur in fewer than 50 packages on Hackage need a deprecation
    period of at least 6 months / one major GHC release;
 
- * definitions that have 50-200 users on Hackage need a deprecation period of at
+ * definitions that occur in 50-200 packages on Hackage need a deprecation period of at
    least 1 year / two major GHC releases;
 
- * definitions that have more than 200 users on Hackage need a deprecation
+ * definitions that occur in more than 200 packages on Hackage need a deprecation
    period of at least 2 years / four major GHC releases.
 
 Longer deprecation periods may be appropriate if the removal involves
