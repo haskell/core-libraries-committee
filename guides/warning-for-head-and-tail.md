@@ -13,7 +13,7 @@ This is not a breaking change, unless a package forces `-Werror`.
 
 If you don't want to change any Haskell code and want to carry on with using `Data.List.{head,tail}`:
 
-1. If you use `-Werror`, set `-Wwarn=x-partial` to downgrade this area of compiler messages from errors to warnings, so that your build can succeed. Note that `x-partial` is a new group of warnings, introduced in GHC 9.8, so you might need additionally set `-Wno-unrecognised-warning-flags` or `-Wwarn=unrecognised-warning-flags` to maintain backward compatibility with older GHC releases.
+1. If you use `-Werror`, set `-Wwarn=x-partial` to downgrade this area of compiler messages from errors to warnings, so that your build can succeed. Note that `x-partial` is a new group of warnings, introduced in GHC 9.8, so you might need to additionally set `-Wno-unrecognised-warning-flags` or `-Wwarn=unrecognised-warning-flags` to maintain backward compatibility with older GHC releases.
 
 2. If you are annoyed by warnings, set `-Wno-x-partial` to quash this area of compiler messages. Use `-Wno-unrecognised-warning-flags` to maintain backward compatibility with older GHC releases. To disable the warnings once and forever in GHCi, put `:set -Wno-x-partial -Wno-unrecognised-warning-flags` into `~/.ghci` config file.
    Beware that this also disables any other warnings in the custom `-x-partial` warning group!
