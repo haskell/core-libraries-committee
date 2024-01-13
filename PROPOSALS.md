@@ -86,8 +86,8 @@ request feedback on feasibility before investing time and effort in the full pro
     * Follow [GHC's "Contributing a Patch" guidelines](https://gitlab.haskell.org/ghc/ghc/-/wikis/Contributing-a-Patch)
       when creating an MR (e.g. [appropriate commit messages](https://gitlab.haskell.org/ghc/ghc/-/wikis/Contributing-a-Patch#22-commit-messages)).
     * Make sure to include a link to the CLC discussion into the commit message.
-    * Make sure to update `libraries/base/changelog.md`. Insert a new entry
-      at an arbitrary position instead of the last one to minimise merge conflicts.
+    * Make sure to update `libraries/base/changelog.md`. (You might like to insert your new entry
+      at an arbitrary position instead of the last one to minimise merge conflicts.)
     * Raise a merge request (MR). GitLab's merge requests work similarly to what
       GitHub calls "pull requests" (PR).
     * Do not mark your MR as "draft", you actually want people to pay attention and
