@@ -82,7 +82,7 @@ request feedback on feasibility before investing time and effort in the full pro
     * If your account is not approved soon (this is a manual process to combat spam),
       ask for approval in your CLC discussion thread, someone will take care of it.
     * Fork GHC repository and implement your proposal in a non-`master` branch.
-      Do not work in `master`, it will cause issues with Marge Bot later.
+      (It's probably best if you create a new branch rather than working `master`, see below.)
     * Follow [GHC's "Contributing a Patch" guidelines](https://gitlab.haskell.org/ghc/ghc/-/wikis/Contributing-a-Patch)
       when creating an MR (e.g. [appropriate commit messages](https://gitlab.haskell.org/ghc/ghc/-/wikis/Contributing-a-Patch#22-commit-messages)).
     * Make sure to include a link to the CLC discussion into the commit message.
