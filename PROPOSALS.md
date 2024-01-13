@@ -102,6 +102,9 @@ request feedback on feasibility before investing time and effort in the full pro
       likely need to adjust baselines in `testsuite/tests/interface-stability`. Usually
       you can do it by running `hadrian/build -j test --only=base-exports --test-accept`
       and copying changes to adjacent files.
+    * Unless your branch is particularly big, it's advisable to squash it into
+      a single commit. At the moment GitLab does not offer "squash-and-merge"
+      option in UI, so this has to be maintained manually.
 
 ## The "when"
 
