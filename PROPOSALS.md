@@ -78,11 +78,33 @@ request feedback on feasibility before investing time and effort in the full pro
     * or just share patch files, in the same format as
       [`head.hackage`](https://gitlab.haskell.org/ghc/head.hackage) does.
 5. Implement the proposal.
-    * Note that you should follow [GHC's "Contributing a Patch" guidelines](https://gitlab.haskell.org/ghc/ghc/-/wikis/Contributing-a-Patch) when creating an MR (e.g. [appropriate commit messages](https://gitlab.haskell.org/ghc/ghc/-/wikis/Contributing-a-Patch#22-commit-messages)),
+    * Register at https://gitlab.haskell.org/ghc/ghc.
+    * If your account is not approved soon (this is a manual process to combat spam),
+      ask for approval in your CLC discussion thread, someone will take care of it.
+    * Fork GHC repository and implement your proposal.
+      (It's probably best if you create a new branch rather than working in `master`, see below.)
+    * Follow [GHC's "Contributing a Patch" guidelines](https://gitlab.haskell.org/ghc/ghc/-/wikis/Contributing-a-Patch)
+      when creating an MR (e.g. [appropriate commit messages](https://gitlab.haskell.org/ghc/ghc/-/wikis/Contributing-a-Patch#22-commit-messages)).
     * Make sure to include a link to the CLC discussion into the commit message.
-    * Make sure to update `libraries/base/changelog.md`.
+    * Make sure to update `libraries/base/changelog.md`. (You might like to insert your new entry
+      at an arbitrary position instead of the last one to minimise merge conflicts.)
+    * Raise a merge request (MR). Ensure your merge request is not from a branch
+      called `master` because that will cause issues for Marge Bot. (A GitLab merge
+      request works similarly to what GitHub calls a "pull request" (PR).)
+    * Do not mark your MR as "draft", you actually want people to pay attention and
+      review as early as possible. "Draft" is often understood by potential reviewers
+      as a "private experiment".
     * Writing tests is always a good idea and especially crucial for
       semantic changes, if feasible.
+    * If you happen to have rights to assign labels, label the MR as "core libraries"
+      and "needs CLC feedback".
+    * If your proposal modifies types of existing entities or adds new entities, you
+      likely need to adjust baselines in `testsuite/tests/interface-stability`. Usually
+      you can do it by running `hadrian/build -j test --only=base-exports --test-accept`
+      and copying changes to adjacent files.
+    * Unless your branch is particularly big, it's advisable to squash it into
+      a single commit. At the moment GitLab does not offer "squash-and-merge"
+      option in UI, so this has to be maintained manually.
 
 ## The "when"
 
