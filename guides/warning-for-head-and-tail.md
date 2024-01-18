@@ -46,7 +46,7 @@ If you are happy to change code to eliminate warning messages:
 
 5. If the list is guaranteed to be not only non-empty, but actually infinite, one can be benefit from enforcing this invariant in types as well. E. g., use  [`Stream`](https://hackage.haskell.org/package/Stream/docs/Data-Stream.html), [`streams`](https://hackage.haskell.org/package/streams/docs/Data-Stream-Infinite.html) or [`infinite-list`](https://hackage.haskell.org/package/infinite-list/docs/Data-List-Infinite.html).
 
-6. As an ultimate measure you can hide `Prelude.{head,tail}` and define your own in a utility module.
+6. As an ultimate measure you can hide `Prelude.{head,tail}` and define your own in a utility module, or use `headErr` and `tailErr` from [`Safe`](https://hackage.haskell.org/package/safe-0.3.20/docs/Safe.html#g:2).
 
 # PR template
 
