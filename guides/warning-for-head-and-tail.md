@@ -48,6 +48,8 @@ If you are happy to change code to eliminate warning messages:
 
 6. As an ultimate measure you can hide `Prelude.{head,tail}` and define your own in a utility module, or use `headErr` and `tailErr` from [`Safe`](https://hackage.haskell.org/package/safe-0.3.21/docs/Safe.html#g:2).
 
+7. While it goes against the spirit of the proposal and is discouraged, one can replace `head` with `(!! 0)`.
+
 # PR template
 
 Here is a template, which you can use when raising PRs against affected libraries.
