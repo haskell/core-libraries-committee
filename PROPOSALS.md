@@ -149,6 +149,8 @@ To provide a clearer picture of the downstream effects of a proposal, the CLC re
 
 For more details, visit the [`clc-stackage` how-to](https://github.com/Bodigrim/clc-stackage#how-to).
 
+Note that additional or new warnings and deprecations are not classified as breaking changes. We assume that users who enable `-Werror` make a conscious and informed choice to break their builds as early and as fatal as possible.
+
 ## Proposal lifecycle
 
 Your proposal may move through different stages which is indicated by the corresponding label:
