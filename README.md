@@ -62,6 +62,7 @@ Current list of Core Libraries:
 * `stm`,
 * `template-haskell`,
 * `text`,
+* `transformers`,
 * `unix`,
 * `vector`,
 * `vector-binary-instances`,
