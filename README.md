@@ -56,6 +56,7 @@ Current list of Core Libraries:
 * `entropy`,
 * `filepath`,
 * `mtl`,
+* `os-string`,
 * `primitive`,
 * `process`,
 * `random`,
