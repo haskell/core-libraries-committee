@@ -54,6 +54,7 @@ Current list of Core Libraries:
 * `deepseq`,
 * `directory`,
 * `entropy`,
+* `file-io`
 * `filepath`,
 * `mtl`,
 * `os-string`,
