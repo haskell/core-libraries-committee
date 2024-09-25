@@ -50,6 +50,7 @@ The overall goals are
 Current list of Core Libraries:
 
 * `array`,
+* `binary`,
 * `bytestring`,
 * `deepseq`,
 * `directory`,
