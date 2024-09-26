@@ -57,6 +57,7 @@ Current list of Core Libraries:
 * `entropy`,
 * `file-io`
 * `filepath`,
+* `haskeline`,
 * `mtl`,
 * `os-string`,
 * `primitive`,
@@ -64,6 +65,7 @@ Current list of Core Libraries:
 * `random`,
 * `stm`,
 * `template-haskell`,
+* `terminfo`,
 * `text`,
 * `transformers`,
 * `unix`,
