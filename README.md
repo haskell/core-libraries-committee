@@ -97,3 +97,19 @@ to suggest for a core library (including one that affects several), please start
 the maintainer(s) and/or main source repositories, as listed on Hackage. If the maintainer
 is unsure of whether to proceed, they can come to the CLC for further guidance. On the other
 hand, if you struggle to reach a responsive maintainer, come to the CLC directly.
+
+## Portability
+
+It is a priority of the CLC and the library maintainers to
+ensure that core libraries remain portable. Core libraries are the building blocks
+of the ecosystem and it's important that the same libraries are available to be used
+on a variety of operating systems and architectures.
+
+In particular:
+
+* Libraries should remain compatible with a large range of platforms. Including but
+  not exclusive to standard linux distributions (aarch64 and x86_64), darwin systems and windows.
+* Libraries should avoid using features which not all backends support such as `TemplateHaskell`.
+  For boot libraries, this is a hard requirement.
+
+
