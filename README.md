@@ -58,6 +58,8 @@ Current list of Core Libraries:
 * `file-io`
 * `filepath`,
 * `haskeline`,
+* `hpc`,
+* `hpc-bin`,
 * `mtl`,
 * `os-string`,
 * `primitive`,
