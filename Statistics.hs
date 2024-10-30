@@ -6,12 +6,13 @@ build-depends:
 default-language: GHC2021
 ghc-options: -Wall -Wno-type-defaults
 -}
+{-# LANGUAGE ApplicativeDo #-}
 {-# LANGUAGE ImportQualifiedPost #-}
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE RecordWildCards #-}
-{-# LANGUAGE ViewPatterns #-}
 
 import Control.Exception
+import Control.Monad (when)
 import Data.Binary
 import Data.ByteString qualified as B
 import Data.ByteString.Lazy qualified as BL
@@ -20,7 +21,8 @@ import Data.List (sort)
 import Data.Maybe (isNothing, mapMaybe)
 import Data.Text (Text)
 import Data.Text qualified as T
-import Data.Time.Clock (UTCTime, diffUTCTime, getCurrentTime)
+import Data.Time.Calendar (Day, diffDays)
+import Data.Time.Clock (UTCTime (..), diffUTCTime, getCurrentTime)
 import Data.Tuple
 import Data.Vector qualified as V
 import GitHub qualified as GH
@@ -28,9 +30,9 @@ import Options.Applicative
 import System.IO
 import Prelude hiding (until)
 
-data Config = Config {
-    since :: UTCTime
-  , until :: Maybe UTCTime
+data Config = Config
+  { startTime :: Day
+  , endTime :: Day
   , workMode :: WorkMode
   }
 
@@ -38,21 +40,23 @@ data WorkMode
   = Offline FilePath
   | Online (Maybe B.ByteString) (Maybe FilePath)
 
-configParser :: Parser Config
-configParser = do
+configParser :: UTCTime -> Parser Config
+configParser currTime = do
+  startTime <-
+    option auto $
+      long "since"
+        <> metavar "DATE"
+        <> help "The start date of the analysis"
+        <> showDefault
+        <> value (read "2021-10-23")
+  endTime <-
+    option auto $
+      long "until"
+        <> metavar "DATE"
+        <> help "The end date of the analysis"
+        <> showDefault
+        <> value (utctDay currTime)
   let
-    parseStartTime =
-        option auto $
-          long "since"
-            <> metavar "SINCE"
-            <> help "The start date of the analysis (default: 2021-10-23)"
-            <> value (read "2021-10-23 00:00:00 UTC")
-    parseEndTime =
-      optional $
-        option auto $
-          long "until"
-            <> metavar "UNTIL"
-            <> help "The end date of the analysis"
     parseUsername =
       optional $
         strOption $
@@ -71,7 +75,8 @@ configParser = do
           <> metavar "FILE"
           <> help "Work offline using previously saved cache"
 
-  Config <$> parseStartTime <*> parseEndTime <*> (Offline <$> parseOffline <|> Online <$> parseUsername <*> parseCacheFile)
+  workMode <- Offline <$> parseOffline <|> Online <$> parseUsername <*> parseCacheFile
+  pure Config {..}
 
 getPassword :: IO B.ByteString
 getPassword = do
@@ -90,10 +95,10 @@ getBasicAuth username = do
   password <- getPassword
   pure $ GH.BasicAuth username password
 
-getGithubIssues :: Config -> IO (V.Vector GH.Issue)
-getGithubIssues (workMode -> (Offline cacheFile)) =
+getGithubIssues :: WorkMode -> IO (V.Vector GH.Issue)
+getGithubIssues (Offline cacheFile) =
   decode <$> BL.readFile cacheFile
-getGithubIssues (workMode -> (Online mUsername mCacheFile)) = do
+getGithubIssues (Online mUsername mCacheFile) = do
   let githubOrg = "haskell"
       githubRepo = "core-libraries-committee"
   am <- traverse getBasicAuth mUsername
@@ -133,9 +138,9 @@ computeLifeTimeInDays Issue {..} = case issClosedAt of
   Nothing -> Nothing
   Just t -> Just $ realToFrac (diffUTCTime t issCreatedAt) / 86400
 
-computeDaysSinceCreation :: UTCTime -> Issue -> Double
+computeDaysSinceCreation :: Day -> Issue -> Double
 computeDaysSinceCreation currTime Issue {..} =
-  realToFrac (diffUTCTime currTime issCreatedAt) / 86400
+  realToFrac (diffUTCTime (UTCTime currTime 0) issCreatedAt) / 86400
 
 isApproved :: Issue -> Bool
 isApproved Issue {..} = "approved" `elem` issLabels
@@ -143,13 +148,13 @@ isApproved Issue {..} = "approved" `elem` issLabels
 isDeclined :: Issue -> Bool
 isDeclined Issue {..} = "declined" `elem` issLabels
 
-isMeta :: Issue -> Bool
-isMeta Issue {..} = "meta" `elem` issLabels
+isProposal :: Issue -> Bool
+isProposal Issue {..} = not ("meta" `elem` issLabels || "core-libraries" `elem` issLabels)
 
-isWithinTimeFrame :: UTCTime -> UTCTime -> Issue -> Bool
+isWithinTimeFrame :: Day -> Day -> Issue -> Bool
 isWithinTimeFrame since to Issue {..} =
-  issCreatedAt >= since
-  && issCreatedAt <= to
+  issCreatedAt >= UTCTime since 0
+    && issCreatedAt <= UTCTime to 0
 
 isBase :: Int -> Issue -> Bool
 isBase n Issue {..} = ("base-4." <> T.pack (show n)) `elem` issLabels
@@ -169,6 +174,7 @@ data Stat = Stat
   deriving (Show)
 
 collectStat :: (Issue -> Maybe Double) -> [Issue] -> Stat
+collectStat _ [] = error "collectStat: no issues found!"
 collectStat f is = Stat {..}
   where
     (statMinIssue, statMinMetric) = getMin is
@@ -189,26 +195,27 @@ collectStat f is = Stat {..}
 
 main :: IO ()
 main = do
-  cnf <-
+  currTime <- getCurrentTime
+  Config {..} <-
     execParser $
       info
-        (configParser <**> helper)
+        (configParser currTime <**> helper)
         (fullDesc <> header "Collect statistics for CLC proposals")
-  issues <- getGithubIssues cnf
-
-  let startTime = since cnf
-  endTime <- maybe getCurrentTime pure (until cnf)
+  issues <- getGithubIssues workMode
 
   let proposals =
         filter (isWithinTimeFrame startTime endTime) $
-          filter (not . isMeta) . map githubIssueToIssue $
+          filter isProposal . map githubIssueToIssue $
             filter (isNothing . GH.issuePullRequest) $
               V.toList issues
       approvedProposals = filter isApproved proposals
       declinedProposals = filter isDeclined proposals
 
+  putStrLn $ "Timeframe: since " ++ show startTime ++ " until " ++ show endTime
+  putStrLn ""
+
   putStrLn $ "Total number of CLC proposals: " ++ show (length proposals)
-  putStrLn $ "Rate of proposals:  " ++ show (round (fromIntegral (length proposals) * 86400 * 365.25 / 12 / realToFrac (diffUTCTime endTime startTime))) ++ " per month"
+  putStrLn $ "Rate of proposals:  " ++ show (round (fromIntegral (length proposals) * 365.25 / 12 / realToFrac (diffDays endTime startTime))) ++ " per month"
   putStrLn $ "Approved proposals: " ++ show (length approvedProposals)
   putStrLn $ "Declined proposals: " ++ show (length declinedProposals)
   putStrLn ""
@@ -243,9 +250,10 @@ main = do
   putStrLn ""
 
   let openProposals = filter (isNothing . issClosedAt) proposals
-  putStrLn $ "Open proposals: " ++ show (length openProposals)
-  let openLifeTime = collectStat (Just . computeDaysSinceCreation endTime) openProposals
-  putStrLn $ "Median  age for open proposals: " ++ show (statMed openLifeTime) ++ " days"
-  putStrLn $ "Average age for open proposals: " ++ show (statAvg openLifeTime) ++ " days"
-  putStrLn $ "Newest open proposal:\n\t" ++ show (round (statMinMetric openLifeTime)) ++ " days for " ++ show (issTitle (statMinIssue openLifeTime))
-  putStrLn $ "Oldest open proposal:\n\t" ++ show (round (statMaxMetric openLifeTime)) ++ " days for " ++ show (issTitle (statMaxIssue openLifeTime))
+  when (not $ null openProposals) $ do
+    putStrLn $ "Open proposals: " ++ show (length openProposals)
+    let openLifeTime = collectStat (Just . computeDaysSinceCreation endTime) openProposals
+    putStrLn $ "Median  age for open proposals: " ++ show (statMed openLifeTime) ++ " days"
+    putStrLn $ "Average age for open proposals: " ++ show (statAvg openLifeTime) ++ " days"
+    putStrLn $ "Newest open proposal:\n\t" ++ show (round (statMinMetric openLifeTime)) ++ " days for " ++ show (issTitle (statMinIssue openLifeTime))
+    putStrLn $ "Oldest open proposal:\n\t" ++ show (round (statMaxMetric openLifeTime)) ++ " days for " ++ show (issTitle (statMaxIssue openLifeTime))
