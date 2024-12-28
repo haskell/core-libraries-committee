@@ -103,3 +103,32 @@ to suggest for a core library (including one that affects several), please start
 the maintainer(s) and/or main source repositories, as listed on Hackage. If the maintainer
 is unsure of whether to proceed, they can come to the CLC for further guidance. On the other
 hand, if you struggle to reach a responsive maintainer, come to the CLC directly.
+
+### Elections
+
+Vacant or expired CLC member seats are filled via elections. Anyone
+can nominate themselves and outgoing CLC members can re-nominate themselves.
+
+Usually a nomination process takes place during January, followed by a vote in early February.
+If a position becomes vacant in the middle of the year, it can be filled immediately
+or left vacant until a new cycle. The danger is that if you have an election to fill
+a single slot in October followed by a regular election to fill, say, three slots in January,
+the former will be overbooked and the latter is likely to offer a very limited choice.
+
+Elections kick of with a chair posting a call for nominations on various community platforms.
+The chair creates a separate private mailbox to gather nominations
+(do not use public mail lists for this purpose)
+and shares received messages with the rest of the committee members,
+again using private emails.
+
+Depending on the number of slots to fill and nominations received, the chair
+recommends a voting procedure. Unless there is a reason to diverge,
+[Condorcet procedure](https://en.wikipedia.org/wiki/Condorcet_method)
+with [Schulze method](https://en.wikipedia.org/wiki/Schulze_method)
+is used.
+
+After elections the following groups should be updated and kept in sync:
+
+* [GitHub team](https://github.com/orgs/haskell/teams/core-libraries-committee)
+* [GitLab team](https://gitlab.haskell.org/groups/core-libraries/-/group_members)
+* [Maillist members](https://groups.google.com/g/haskell-core-libraries/members)
