@@ -245,8 +245,10 @@ main = do
   putStrLn $ "Most active:\n\t" ++ show (round (statMaxMetric allComments)) ++ " comments for " ++ show (issTitle (statMaxIssue allComments))
   putStrLn ""
 
-  forM_ [16 .. 21] $ \n ->
-    putStrLn $ "Released in base-4." ++ show n ++ ": " ++ show (length (filter (isBase n) approvedProposals))
+  forM_ [0 .. 99] $ \n -> do
+    let releasedInVersion = length (filter (isBase n) approvedProposals)
+    when (releasedInVersion > 0) $
+      putStrLn $ "Released in base-4." ++ show n ++ ": " ++ show releasedInVersion
   putStrLn ""
 
   let openProposals = filter (isNothing . issClosedAt) proposals
