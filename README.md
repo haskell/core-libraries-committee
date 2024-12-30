@@ -115,7 +115,7 @@ or left vacant until a new cycle. The danger is that if you have an election to 
 a single slot in October followed by a regular election to fill, say, three slots in January,
 the former will be overbooked and the latter is likely to offer a very limited choice.
 
-Elections kick of with a chair posting a call for nominations on various community platforms.
+Elections kick off with a chair posting a call for nominations on various community platforms.
 The chair creates a separate private mailbox to gather nominations
 (do not use public mail lists for this purpose)
 and shares received messages with the rest of the committee members,
