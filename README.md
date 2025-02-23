@@ -138,10 +138,17 @@ After elections the following groups should be updated and kept in sync:
 
 ## Etiquette
 
+### Proposers and Commenters
+
 Everyone is welcome to participate in discussions and proposals. We expect all participants
 to be respectful and on-topic.
 
 Proposers should also be aware that alternative solutions and designs are generally on-topic,
 as they may affect the voting. While it's up to the proposer on how much they engage in
 alternative design discussions, we consider these vital to the proposal process.
+
+### CLC Members
+
+CLC members are required to follow the [guidelines for respectful communication](https://haskell.foundation/guidelines-for-respectful-communication/)
+since the CLC is [affiliated](https://haskell.foundation/affiliates/) with the Haskell Foundation.
 
