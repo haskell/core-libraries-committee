@@ -88,6 +88,7 @@ request feedback on feasibility before investing time and effort in the full pro
     * Make sure to include a link to the CLC discussion into the commit message.
     * Make sure to update `libraries/base/changelog.md`. (You might like to insert your new entry
       at an arbitrary position instead of the last one to minimise merge conflicts.)
+    * Raise an issue, linking to the GitHub proposal (this is needed for assigning milestones)
     * Raise a merge request (MR). Ensure your merge request is not from a branch
       called `master` because that will cause issues for Marge Bot. (A GitLab merge
       request works similarly to what GitHub calls a "pull request" (PR).)
