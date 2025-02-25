@@ -135,3 +135,13 @@ After elections the following groups should be updated and kept in sync:
 * [GitHub team](https://github.com/orgs/haskell/teams/core-libraries-committee)
 * [GitLab team](https://gitlab.haskell.org/groups/core-libraries/-/group_members)
 * [Maillist members](https://groups.google.com/g/haskell-core-libraries/members)
+
+## Etiquette
+
+Everyone is welcome to participate in discussions and proposals. We expect all participants
+to be respectful and on-topic.
+
+Proposers should also be aware that alternative solutions and designs are generally on-topic,
+as they may affect the voting. While it's up to the proposer on how much they engage in
+alternative design discussions, we consider these vital to the proposal process.
+
