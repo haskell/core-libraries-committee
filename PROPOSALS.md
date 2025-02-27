@@ -105,6 +105,13 @@ request feedback on feasibility before investing time and effort in the full pro
     * Unless your branch is particularly big, it's advisable to squash it into
       a single commit. At the moment GitLab does not offer "squash-and-merge"
       option in UI, so this has to be maintained manually.
+6. after the proposal is approved, coordinate with CLC and GHC team:
+    * CLC needs to be label the proposal as "approved" and "awaits-merge"
+    * CLC or GHC team needs to add a comment to the GHC MR "Approved by CLC in [link to the vote outcome]" and approve the MR
+    * Double check that the changelog and the commit messages are in order
+    * Raise an issue on GHC GitLab to help GHC team with tracking
+    * CLC or GHC team needs to assign the MR to Marge Bot
+    * After merging, CLC needs to remove proposal label "awaits-merge" and add "base-4.XX" (coordinate wiht GHC devs which base would be the first to release the change)
 
 ## The "when"
 
