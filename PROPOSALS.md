@@ -111,7 +111,7 @@ request feedback on feasibility before investing time and effort in the full pro
     * Double check that the changelog and the commit messages are in order
     * Raise an issue on GHC GitLab to help GHC team with tracking
     * CLC or GHC team needs to assign the MR to Marge Bot
-    * After merging, CLC needs to remove the proposal label "awaits-merge" and add "base-4.XX" (coordinate wiht GHC devs which base would be the first to release the change)
+    * After merging, CLC needs to remove the proposal label "awaits-merge" and add "base-4.XX" (coordinate with GHC devs which base would be the first to release the change)
 
 ## The "when"
 
