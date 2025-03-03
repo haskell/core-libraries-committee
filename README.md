@@ -5,6 +5,15 @@
 * [Proposals under active consideration](https://github.com/haskell/core-libraries-committee/issues) are open issues.
 * [Accepted proposals](https://github.com/haskell/core-libraries-committee/issues?q=is%3Aissue+is%3Aclosed+label%3Aapproved) are closed issues with the `approved` label.
 
+## Our mission in brief
+
+* provide a smooth, but thorough process through which the community can participate in API changes to [base](#base-package) (the de-facto standard library for Haskell)
+* maintain a high standard for [respectful and productive discussions](#etiquette)
+* work closely with GHC developers to get base changes released quickly
+* on request, assist the community with [Core Libraries](#core-libraries) by ensuring they have active maintainers
+* on request, assist maintainers of said packages with counsel
+* co-maintain the [Haskell Package Versioning Policy](#pvp)
+
 ## Structure
 
 The committee consists of 7 members:
