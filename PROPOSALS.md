@@ -105,6 +105,15 @@ request feedback on feasibility before investing time and effort in the full pro
     * Unless your branch is particularly big, it's advisable to squash it into
       a single commit. At the moment GitLab does not offer "squash-and-merge"
       option in UI, so this has to be maintained manually.
+6. after the proposal is approved, coordinate with CLC and GHC team:
+    * CLC needs to label the proposal as "approved" and "awaits-merge"
+    * CLC or GHC team needs to add a comment to the GHC MR "Approved by CLC in [link to the vote outcome]".
+    * Double check that the changelog and the commit messages are in order
+    * Raise an issue on GHC GitLab to help GHC team with progress and release tracking
+    * The GHC MR needs to be reviewed/approved and landed. This is typically done by members of the CLC and GHC Team.
+    * After merging, CLC needs to remove the proposal label "awaits-merge" and add "base-4.XX" (coordinate with GHC devs which base would be the first to release the change)
+    * all changes to `base` package slated for future release should land in GHC `master` before the next major release branch is forked (also see [GHC wiki on major releases](https://gitlab.haskell.org/ghc/ghc/-/wikis/GHC-status#1-major-releases))
+      - backports are usually reserved for security or packaging matters
 
 ## The "when"
 
