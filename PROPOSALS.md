@@ -109,9 +109,11 @@ request feedback on feasibility before investing time and effort in the full pro
     * CLC needs to label the proposal as "approved" and "awaits-merge"
     * CLC or GHC team needs to add a comment to the GHC MR "Approved by CLC in [link to the vote outcome]" and approve the MR
     * Double check that the changelog and the commit messages are in order
-    * Raise an issue on GHC GitLab to help GHC team with tracking
+    * Raise an issue on GHC GitLab to help GHC team with progress and release tracking
     * CLC or GHC team needs to assign the MR to Marge Bot
     * After merging, CLC needs to remove the proposal label "awaits-merge" and add "base-4.XX" (coordinate with GHC devs which base would be the first to release the change)
+    * all changes to `base` package slated for future release should land in GHC `master` before the next major release branch is forked (also see [GHC wiki on major releases](https://gitlab.haskell.org/ghc/ghc/-/wikis/GHC-status#1-major-releases))
+      - backports are usually reserved for security or packaging matters
 
 ## The "when"
 
