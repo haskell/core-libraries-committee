@@ -7,12 +7,12 @@
 
 ## Our mission in brief
 
-* provide a smooth, but thorough process through which the community can participate in API changes to [base](#base-package) (the de-facto standard library for Haskell)
-* maintain a high standard for [respectful and productive discussions](#etiquette)
-* work closely with GHC developers to get base changes released quickly
-* on request, assist the community with [Core Libraries](#core-libraries) by ensuring they have active maintainers
-* on request, assist maintainers of said packages with counsel
-* co-maintain the [Haskell Package Versioning Policy](#pvp)
+* Provide a smooth, but thorough process through which the community can participate in API changes to [base](#base-package) (the de-facto standard library for Haskell)
+* Maintain a high standard for [respectful and productive discussions](#etiquette)
+* Work closely with GHC developers to get base changes released quickly
+* On request, assist the community with [Core Libraries](#core-libraries) by ensuring they have active maintainers
+* On request, assist maintainers of said packages with counsel
+* Co-maintain the [Haskell Package Versioning Policy](#pvp)
 
 ## Structure
 
