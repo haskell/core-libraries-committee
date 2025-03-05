@@ -16,7 +16,7 @@
 
 ## Structure
 
-The committee consists of 7 members:
+The committee consists of 10 members:
 
 * Moritz Angermann @angerman (co-chair, term ending February 2026)
 * Julian Ospald @hasufell (chair, term ending February 2026)
