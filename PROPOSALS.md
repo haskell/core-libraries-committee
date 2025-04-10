@@ -115,6 +115,9 @@ request feedback on feasibility before investing time and effort in the full pro
     * all changes to `base` package slated for future release should land in GHC `master` before the next major release branch is forked (also see [GHC wiki on major releases](https://gitlab.haskell.org/ghc/ghc/-/wikis/GHC-status#1-major-releases))
       - backports are usually reserved for security or packaging matters
 
+Make sure the proposal is merged in a reasonable timeframe. The CLC reserves the right to consider a proposal
+as ![abandoned][label:abandoned] if it has not been merged within a year since approval (this nullifies the vote).
+
 ## The "when"
 
 If you've got a pet issue that's been sleeping in the depths of a mailing list
