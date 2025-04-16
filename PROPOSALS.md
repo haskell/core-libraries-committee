@@ -67,6 +67,8 @@ To be more precise, as the proposal author, you will be expected to do the follo
 tasks, or find volunteers who'll do this for you. You may post a brief proposal and
 request feedback on feasibility before investing time and effort in the full process.
 
+The following is a step by step guide for common proposals:
+
 1. Refine your proposal.
 2. Make impact assessment.
 3. Write a migration guide.
@@ -114,6 +116,20 @@ request feedback on feasibility before investing time and effort in the full pro
     * After merging, CLC needs to remove the proposal label "awaits-merge" and add "base-4.XX" (coordinate with GHC devs which base would be the first to release the change)
     * all changes to `base` package slated for future release should land in GHC `master` before the next major release branch is forked (also see [GHC wiki on major releases](https://gitlab.haskell.org/ghc/ghc/-/wikis/GHC-status#1-major-releases))
       - backports are usually reserved for security or packaging matters
+
+If your proposal is a "multi-phase proposal" with multiple implementation and deprecation steps, make sure to
+precisely define when each step is supposed to take place.
+
+### A note on stale proposals
+
+The CLC can revoke its approval for a proposal if an **"activity"** has been overdue for over a year. The revocation request, which
+explains what has changed with the passage of time to justify the review, can be initiated by the chair. If no CLC member vetos
+the request, then it automatically passes.
+
+**"Activity"** is defined as a successfully carried out implementation step, e.g.
+
+- for a simple proposal: whether it has been merged
+- for a multi-phase proposal: whether the next step has been carried out as planned
 
 ## The "when"
 
