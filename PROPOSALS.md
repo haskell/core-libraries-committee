@@ -120,7 +120,7 @@ The following is a step by step guide for common proposals:
 If your proposal is a "multi-phase proposal" with multiple implementation and deprecation steps, make sure to
 precisely define when each step is supposed to take place.
 
-### A note on stale proposals
+### Stale proposals
 
 The CLC can revoke its approval for a proposal if an **"activity"** has been overdue for over a year. The revocation request, which
 explains what has changed with the passage of time to justify the review, can be initiated by the chair. If no CLC member vetos
@@ -130,6 +130,15 @@ the request, then it automatically passes.
 
 - for a simple proposal: whether it has been merged
 - for a multi-phase proposal: whether the next step has been carried out as planned
+
+### `base`: Bug fixes
+
+The CLC votes on concrete changes to `base` and not designs. If a change to `base`
+has been accepted but is later found to be faulty in implementation or design
+fixing it will require its own CLC proposal.
+
+Similarly fixes to existing bugs, no matter how trivial, will require
+a CLC proposal. This reduces the risk of bug fixes having unintended consequences.
 
 ## The "when"
 
