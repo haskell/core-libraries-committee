@@ -120,7 +120,7 @@ The following is a step by step guide for common proposals:
 If your proposal is a "multi-phase proposal" with multiple implementation and deprecation steps, make sure to
 precisely define when each step is supposed to take place.
 
-### A note on stale proposals
+### Stale proposals
 
 The CLC can revoke its approval for a proposal if an **"activity"** has been overdue for over a year. The revocation request, which
 explains what has changed with the passage of time to justify the review, can be initiated by the chair. If no CLC member vetos
@@ -130,6 +130,15 @@ the request, then it automatically passes.
 
 - for a simple proposal: whether it has been merged
 - for a multi-phase proposal: whether the next step has been carried out as planned
+
+### `base` changes
+
+Any GHC MR that changes a part of base under CLC purview requires a CLC proposal, pointing to the GHC MR, seeking approval from CLC of the changes to the base API.
+This specifically includes:
+
+* Bug-fixes that make a wrongly-implemented functions obey their specification.
+  Even if the change clearly fixes an outright bug.
+* Performance improvements -- even if performance always improves.
 
 ## The "when"
 
