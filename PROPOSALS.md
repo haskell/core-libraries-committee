@@ -131,14 +131,14 @@ the request, then it automatically passes.
 - for a simple proposal: whether it has been merged
 - for a multi-phase proposal: whether the next step has been carried out as planned
 
-### `base`: Bug fixes
+### `base` changes
 
-The CLC votes on concrete changes to `base` and not designs. If a change to `base`
-has been accepted but is later found to be faulty in implementation or design
-fixing it will require its own CLC proposal.
+Any GHC MR that changes a part of base under CLC purview requires a CLC proposal, pointing to the GHC MR, seeking approval from CLC of the changes to the base API.
+This specifically includes:
 
-Similarly fixes to existing bugs, no matter how trivial, will require
-a CLC proposal. This reduces the risk of bug fixes having unintended consequences.
+* Bug-fixes that make a wrongly-implemented function obey its specification.
+  Even if the change clearly fixes an outright bug.
+* Performance improvements -- even if performance always improves.
 
 ## The "when"
 
