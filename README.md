@@ -154,3 +154,36 @@ Proposers should also be aware that alternative solutions and designs are genera
 as they may affect the voting. While it's up to the proposer on how much they engage in
 alternative design discussions, we consider these vital to the proposal process.
 
+## Our values
+
+These are the qualities and principles that we try to informally commit to when making decisions
+and handling contributions.
+
+### Good engineering
+
+Since `base` is the standard library of Haskell we believe that proposed changes need extra
+scrutiny and careful consideration. Our main objective is to assess whether a design is technically
+sound and the trade-offs are something we can commit to.
+
+This sometimes requires lengthy discussions, experiments and additional proof of correctness.
+
+### Open collaboration
+
+Anyone in the community is welcome to participate in the proposal process, regardless of their background
+or opinions, as long as they follow [proper etiquette](#etiquette).
+
+We believe that the only way to maintain such a central piece of software is to be as welcoming as possible
+to collaboration and new ideas, no matter where they come from, and to provide a smooth and predictable
+contribution experience.
+
+### Truth seeking
+
+During difficult discussions we commit to finding the truth.
+
+While each individual's priorities may vary, our evaluation should always be based on technical merit and not on
+social credit or personal bias.
+
+Any participant, no matter their status in the Haskell community, should be able to call out incorrect assumptions
+and faulty reasoning. We do not shame people for being wrong, but we expect that we can progress to finding
+good answers as a collective.
+
