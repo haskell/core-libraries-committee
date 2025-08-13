@@ -173,7 +173,7 @@ Anyone in the community is welcome to participate in the proposal process, regar
 or opinions, as long as they follow [proper etiquette](#etiquette).
 
 We believe that in order to maintain such a central piece of software it is paramount to be as welcoming as possible
-to collaboration and new ideas. We seek to assess the ideas only on their merits, no matter where they come from,
+to collaboration and new ideas. We seek to assess these ideas only on their merits, no matter where they come from,
 and to provide a smooth, consistent, and predictable contribution experience.
 
 ### Truth seeking
