@@ -85,6 +85,8 @@ Current list of Core Libraries:
 * `random`,
 * `stm`,
 * `template-haskell`,
+* `template-haskell-lift`,
+* `template-haskell-quasiquoter`,
 * `terminfo`,
 * `text`,
 * `transformers`,
