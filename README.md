@@ -16,9 +16,8 @@
 
 ## Structure
 
-The committee consists of 10 members:
+The committee consists of 9 members:
 
-* Moritz Angermann @angerman (term ending February 2026)
 * Julian Ospald @hasufell (**chair**, term ending February 2026)
 * Matt Parsons @parsonsmatt (term ending February 2026)
 * Josh Miller @velveteer (term ending September 2026)
