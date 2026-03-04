@@ -18,15 +18,16 @@
 
 The committee consists of 9 members:
 
-* Julian Ospald @hasufell (**chair**, term ending February 2026)
-* Matt Parsons @parsonsmatt (term ending February 2026)
 * Josh Miller @velveteer (term ending September 2026)
-* Teo Camarasu @TeofilC (**co-chair**, term ending February 2028)
+* Teo Camarasu @TeofilC (**chair**, term ending February 2028)
 * Daniel Casanueva @Daniel-Diaz (term ending February 2028)
 * Philip Hazelden @ChickenProp (term ending February 2028)
 * Jaro Reinders @noughtmare (term ending February 2028)
 * Marc Scholten @mpscholten (term ending February 2028)
 * Jeff Young @doyougnu (term ending February 2028)
+* Matt Parsons @parsonsmatt (term ending February 2029)
+* Wolfgang Jeltsch @jeltsch (term ending February 2029)
+* Rick Owens @rickowens (term ending February 2029)
 
 The committee makes decisions by simple majority voting. CLC members are also allowed to submit their own [proposals][proposals] and vote on them.
 
