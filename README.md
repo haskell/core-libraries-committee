@@ -16,7 +16,7 @@
 
 ## Structure
 
-The committee consists of 9 members:
+The committee consists of 10 members:
 
 * Josh Miller @velveteer (term ending September 2026)
 * Teo Camarasu @TeofilC (**chair**, term ending February 2028)
