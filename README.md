@@ -62,6 +62,7 @@ The overall goals are
 
 Current list of Core Libraries:
 
+* `aeson`,
 * `array`,
 * `binary`,
 * `bytestring`,
