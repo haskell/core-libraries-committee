@@ -7,7 +7,7 @@ TL;DR Quick overview of the proposal lifecycle:
 
 1. [Create an issue][open-issue] with your idea.
 2. Refine your proposal (if requested: [impact assessment](#impact-assessments), migration guide,
-    patches)
+    patches, ask for public participation)
 3. (When requested) Implement the proposal.
 4. Request and wait for the vote.
 5. If approved, merge the proposal into `base`.
@@ -76,7 +76,9 @@ The following is a step by step guide for common proposals:
 2. Refine your proposal.
     1. Make an [impact assessment](#impact-assessments). This is mandatory for breaking changes.
     2. Write a migration guide.
-    3. Do some work on writing migration patches. Patches can be provided in several forms:
+    3. Ask for public feedback outside of the CLC. This could take place on the 
+        Discourse or on other social media.
+    4. Do some work on writing migration patches. Patches can be provided in several forms:
         * raise draft PRs to affected packages, but communicate clearly that
           the proposal is not accepted yet,
         * create fork repositories with patched packages
