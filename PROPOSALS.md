@@ -76,8 +76,9 @@ The following is a step by step guide for common proposals:
 2. Refine your proposal.
     1. Make an [impact assessment](#impact-assessments). This is mandatory for breaking changes.
     2. Write a migration guide.
-    3. Ask for public feedback outside of the CLC. This could take place on the 
-        Discourse or on other social media.
+    3. Ask for public feedback outside of the CLC. Post your proposal to
+        [this discourse thread](TODO:NotCreatedYet) (or ask someone to do so on
+        your behalf) to get additional feedback.
     4. Do some work on writing migration patches. Patches can be provided in several forms:
         * raise draft PRs to affected packages, but communicate clearly that
           the proposal is not accepted yet,
