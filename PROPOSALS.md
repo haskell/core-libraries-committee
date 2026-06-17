@@ -73,10 +73,10 @@ stalled, ping the chair (or other appropriate CLC member) and ask what to do nex
 The following is a step by step guide for common proposals:
 
 1. Bring your proposal to the CLC as an issue on github.
-2. Refine your proposal.
-    1. Make an [impact assessment](#impact-assessments). This is mandatory for breaking changes.
-    2. Write a migration guide.
-    3. Do some work on writing migration patches. Patches can be provided in several forms:
+2. Refine your proposal, performing the below tasks if neccessary or requested.
+    - Make an [impact assessment](#impact-assessments). This is mandatory for breaking changes.
+    - Write a migration guide.
+    - Do some work on writing migration patches. Patches can be provided in several forms:
         * raise draft PRs to affected packages, but communicate clearly that
           the proposal is not accepted yet,
         * create fork repositories with patched packages
