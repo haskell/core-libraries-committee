@@ -84,9 +84,9 @@ The following is a step by step guide for common proposals:
         * or just share patch files, in the same format as
           [`head.hackage`](https://gitlab.haskell.org/ghc/head.hackage) does.
 3. Implement the proposal.
-    * Register at https://gitlab.haskell.org/ghc/ghc.
-    * If your account is not approved soon (this is a manual process to combat spam),
-      ask for approval in your CLC discussion thread, someone will take care of it.
+    * Register at https://gitlab.haskell.org/ghc/ghc, following the instructions at [contributing#getting-a-gitlab-account](https://gitlab.haskell.org/ghc/ghc/-/wikis/contributing#getting-a-gitlab-account).
+    * If you have issues creating or logging into your account, say so in the
+      CLC discussion thread
     * Fork GHC repository and implement your proposal.
       (It's probably best if you create a new branch rather than working in `master`, see below.)
     * Follow [GHC's "Contributing a Patch" guidelines](https://gitlab.haskell.org/ghc/ghc/-/wikis/Contributing-a-Patch)
