@@ -6,11 +6,11 @@ Just follow the steps outlined here so that your idea doesn't lose traction!
 TL;DR Quick overview of the proposal lifecycle:
 
 1. [Create an issue][open-issue] with your idea.
-2. (When requested) Implement the proposal.
-3. (If requested) Make [impact assessment](#impact-assessments) (it's mandatory for breaking changes).
-4. (If requested) Let us know in a comment about patches to impacted libraries.
-5. Wait for the vote.
-6. (If accepted) Write a migration guide (for proposals with breaking changes).
+2. Refine your proposal (if requested: [impact assessment](#impact-assessments), migration guide,
+    patches)
+3. (When requested) Implement the proposal.
+4. Request and wait for the vote.
+5. If approved, merge the proposal into `base`.
 
 ## The "what"
 
@@ -67,22 +67,26 @@ To be more precise, as the proposal author, you will be expected to do the follo
 tasks, or find volunteers who'll do this for you. You may post a brief proposal and
 request feedback on feasibility before investing time and effort in the full process.
 
+If at any point you are uncertain as to next steps, or feel that the process has
+stalled, ping the chair (or other appropriate CLC member) and ask what to do next.
+
 The following is a step by step guide for common proposals:
 
-1. Refine your proposal.
-2. Make impact assessment.
-3. Write a migration guide.
-4. Do some work on writing migration patches. Patches can be provided in several forms:
-    * raise draft PRs to affected packages, but communicate clearly that
-      the proposal is not accepted yet,
-    * create fork repositories with patched packages
-      and a `cabal.project` template using them,
-    * or just share patch files, in the same format as
-      [`head.hackage`](https://gitlab.haskell.org/ghc/head.hackage) does.
-5. Implement the proposal.
-    * Register at https://gitlab.haskell.org/ghc/ghc.
-    * If your account is not approved soon (this is a manual process to combat spam),
-      ask for approval in your CLC discussion thread, someone will take care of it.
+1. Bring your proposal to the CLC as an issue on github.
+2. Refine your proposal, performing the below tasks if neccessary or requested.
+    - Make an [impact assessment](#impact-assessments). This is mandatory for breaking changes.
+    - Write a migration guide.
+    - Do some work on writing migration patches. Patches can be provided in several forms:
+        * raise draft PRs to affected packages, but communicate clearly that
+          the proposal is not accepted yet,
+        * create fork repositories with patched packages
+          and a `cabal.project` template using them,
+        * or just share patch files, in the same format as
+          [`head.hackage`](https://gitlab.haskell.org/ghc/head.hackage) does.
+3. Implement the proposal.
+    * Register at https://gitlab.haskell.org/ghc/ghc, following the instructions at [contributing#getting-a-gitlab-account](https://gitlab.haskell.org/ghc/ghc/-/wikis/contributing#getting-a-gitlab-account).
+    * If you have issues creating or logging into your account, say so in the
+      CLC discussion thread
     * Fork GHC repository and implement your proposal.
       (It's probably best if you create a new branch rather than working in `master`, see below.)
     * Follow [GHC's "Contributing a Patch" guidelines](https://gitlab.haskell.org/ghc/ghc/-/wikis/Contributing-a-Patch)
@@ -107,7 +111,9 @@ The following is a step by step guide for common proposals:
     * Unless your branch is particularly big, it's advisable to squash it into
       a single commit. At the moment GitLab does not offer "squash-and-merge"
       option in UI, so this has to be maintained manually.
-6. after the proposal is approved, coordinate with CLC and GHC team:
+4. Request a vote to occur from the chair, and wait for the vote to occur.
+    * If your proposal is not accepted, you have nothing more to do.
+5. After the proposal is approved, coordinate with CLC and GHC team:
     * CLC needs to label the proposal as "approved" and "awaits-merge"
     * CLC or GHC team needs to add a comment to the GHC MR "Approved by CLC in [link to the vote outcome]".
     * Double check that the changelog and the commit messages are in order
