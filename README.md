@@ -16,9 +16,8 @@
 
 ## Structure
 
-The committee consists of 9 members:
+The committee consists of 8 members:
 
-* Josh Miller @velveteer (term ending September 2026)
 * Teo Camarasu @TeofilC (**chair**, term ending February 2028)
 * Daniel Casanueva @Daniel-Diaz (term ending February 2028)
 * Philip Hazelden @ChickenProp (term ending February 2028)
